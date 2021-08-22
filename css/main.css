@@ -1,6 +1,6 @@
 body {
   font-family: "Fira Sans", sans-serif;
-  color: #222222;
+  color: #8d8d8d;
   font-size: 18px;
 }
 button {
@@ -144,10 +144,12 @@ li {
 .owl-carousel {
   margin-top: 99px;
 }
-.owl-carousel .item,
-.owl-item {
-  width: 825px !important;
-  position: relative;
+@media screen and (min-width: 992px) {
+  .works-carousel .item,
+  .works-carousel .owl-item {
+    width: 825px !important;
+    position: relative;
+  }
 }
 
 .owl-thene .owl-dots,
@@ -157,10 +159,10 @@ li {
 .owl-theme .owl-nav [class*="owl-"] {
   margin: 0;
 }
-.owl-nav {
+.works-carousel .owl-nav {
   margin-top: 50px !important;
 }
-.owl-prev {
+.works-carousel .owl-prev {
   margin-right: 25px !important;
 }
 .owl-carousel__play {
@@ -223,4 +225,95 @@ li {
 }
 .easy__point_second {
   background: url("../img/bag.svg") no-repeat left center;
+}
+.work {
+  padding-top: 283px;
+}
+.work-tabs {
+  margin-left: 60px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  margin-top: 70px;
+}
+.work-tabs__item a {
+  text-decoration: none;
+  color: #8d8d8d;
+}
+.work-tabs__item.active a {
+  color: #1434e1;
+}
+.works-wrap {
+  flex-wrap: wrap;
+  margin-top: 108px;
+}
+.works-wrap__item {
+  margin-bottom: 30px;
+  display: block;
+  position: relative;
+}
+.works-wrap__item img {
+  transition: all 1s ease;
+  display: block;
+}
+.works-wrap__item:hover img {
+  box-shadow: -30px 80px 200px rgba(0, 0, 0, 0.25);
+  -moz-transform: translate(0px, -16px);
+  -webkit-transform: translate(0px, -16px);
+  -o-transform: translate(0px, -16px);
+  -ms-transform: translate(0px, -16px);
+  transform: translate(0px, -16px);
+}
+.works-wrap__item:hover:after {
+  content: "";
+  display: block;
+  background: url("../img/play.svg");
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -32px;
+  margin-top: -32px;
+}
+.tabs__content {
+  display: none !important;
+}
+.tabs__content.active {
+  display: flex !important;
+}
+.work-btn-title {
+  padding-top: 52px;
+}
+.works-text {
+  margin: 0;
+}
+.works-cont__btn {
+  position: absolute;
+  right: 0;
+}
+.btn {
+  background-color: #4737ff;
+  color: #fff;
+}
+
+.testimonials {
+  padding-top: 248px;
+}
+.contributor {
+  margin-top: 121px;
+}
+.contributor__title {
+  margin-bottom: 10px;
+}
+.cont-photo {
+  display: block;
+}
+.contributor-carousel .owl-nav {
+  display: flex;
+  margin-top: -50px;
+  position: relative;
+}
+.contributor-carousel .owl-prev {
+  margin-right: 25px;
 }
